@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CI/CD Assignment - Mohammed Yousef</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>CI/CD Practical Cloud Assignment</h1>
+        <h2>Student: Mohammed Yousef</h2>
+        <h3>Course: Cloud Computing</h3>
+      </header>
+
+      <main>
+        <section class="content-section">
+          <h2>What is CI/CD?</h2>
+          <p>
+            Continuous Integration and Continuous Deployment (CI/CD) is a set of
+            practices that automate the processes of building, testing, and
+            deploying code. In cloud systems, CI/CD is essential because it
+            allows developers to release updates rapidly and reliably without
+            manual intervention. By automatically running checks on every code
+            change, teams catch bugs early and ensure high software quality.
+            Continuous Deployment then safely delivers these changes to
+            production environments. Overall, CI/CD minimizes downtime, reduces
+            deployment risks, and enables faster delivery of value to users in
+            the cloud.
+          </p>
+        </section>
+
+        <section class="content-section">
+          <h2>My Pipeline</h2>
+          <p>
+            When I push new code to the <code>main</code> branch, it triggers my
+            GitHub Actions workflow. The workflow checks out my code, validates
+            that all required files are present, and builds an artifact of my
+            static site. Finally, a separate deployment job safely publishes
+            this artifact to GitHub Pages, making my latest changes instantly
+            visible online.
+          </p>
+        </section>
+
+        <section class="interactive-section">
+          <h2>Interactive Demo</h2>
+          <p id="demo-text">
+            Click the button below to see an interactive feature.
+          </p>
+          <button id="action-btn">Trigger Action!</button>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
